@@ -13,7 +13,10 @@ La **deducción de argumentos de plantilla** no considera el **tipo de retorno**
 
 ```cpp
 template<typename T1, typename T2, typename RT>
-RT max(T1 a, T2 b);
+T1 max (T1 a, T2 b)
+{
+    return b < a ? a : b;
+}
 
 ::max<int, double, double>(4, 7.2);  // OK, pero tedioso
 ```
