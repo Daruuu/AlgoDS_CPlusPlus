@@ -7,12 +7,25 @@ int main()
 	auto lang = "C++";
 	std::cout << "Hello and welcome to " << lang << "!\n";
 
+	/*
 	for (int i = 1; i <= 5; i++)
 	{
 		// TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
 		std::cout << "i = " << i << std::endl;
 	}
+	*/
 
+	std::cout << "practice and understando pointer and memory pointer\n" << std::endl;
+	std::string name = "daruny";
+	std::string *pName = &name;
+	int edad = 24;
+	int *pEdad = &edad;
+
+	std::cout << "Memory allocation of name: " << pName << "\n";
+	std::cout << "Memory allocation of name: " << *pName;
+
+	std::cout << "\nMemory allocation of edad: " << pEdad << "\n";
+	std::cout << "Memory allocation of edad: " << *pEdad;
 	return 0;
 	// TIP See CLion help at <a href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>. Also, you can try interactive lessons for CLion by selecting 'Help | Learn IDE Features' from the main menu.
 }
