@@ -21,3 +21,7 @@ add_executable( raii
 #        prepare-interview-cpp/esentials-concepts-in-cplusplus/resource-management-RAII.cpp
         prepare-interview-cpp/esentials-concepts-in-cplusplus/raii_demo.cpp
 )
+
+add_executable( declar-definition
+        prepare-interview-cpp/esentials-concepts-in-cplusplus/punto.cpp
+)
