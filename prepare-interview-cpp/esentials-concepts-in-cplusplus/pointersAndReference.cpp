@@ -74,7 +74,41 @@ int main()
 
 	// std::unique_ptr<int> p2 = std::move(p1); // transfiere propiedad
 
+	{
+		std::cout << "\n🔸🔸🔸🔸🔸🔸🔸🔸 6. Pequenyo problema a practicar:\n" << std::endl;
 
+		// 1. Crear un entero x = 42
+		int x = 423;
+
+		// 2. Crear un puntero p que apunte a x
+		int* p = &x;
+
+		// 3. Crear una referencia r que referencie a x
+		int& r = x;
+
+		// Mostrar valores iniciales
+		std::cout << "Valores iniciales:\n";
+		std::cout << "x  = " << x  << std::endl;
+		std::cout << "*p = " << *p << std::endl;
+		std::cout << "r  = " << r  << std::endl;
+		std::cout << std::endl;
+		*p = 43;
+		r = 100;
+		// 5. Imprimir x, *p y r para mostrar que son iguales
+		std::cout << "Después de modificar a través del puntero y la referencia:\n";
+		std::cout << "x  = " << x  << std::endl;  // Debe ser 200
+		std::cout << "*p = " << *p << std::endl;  // Debe ser 200
+		std::cout << "r  = " << r  << std::endl;  // Debe ser 200
+		std::cout << std::endl;
+
+		// Bonus: Mostrar direcciones para entender mejor
+		std::cout << "Direcciones (para entender punteros y referencias):\n";
+		std::cout << "&x  = " << &x  << std::endl;
+		std::cout << "p   = " << p   << std::endl;
+		std::cout << "&r  = " << &r  << std::endl;
+		std::cout << std::endl;
+
+	}
 	return 0;
 }
 
