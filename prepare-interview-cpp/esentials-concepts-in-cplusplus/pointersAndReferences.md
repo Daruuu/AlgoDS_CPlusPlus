@@ -4,7 +4,7 @@
 
 ## **1. Concepto general**
 
-En C++, **una variable normal guarda un valor**, pero un **puntero** guarda **una dirección de memoria**.
+En C++, **una variable normal guarda un valor**, <br>un **puntero** guarda **una dirección de memoria**.<br>
 Una **referencia**, en cambio, **no guarda una dirección**, sino que **es otro nombre (alias)** de una variable existente.
 
 ---
