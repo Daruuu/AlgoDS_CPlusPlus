@@ -10,8 +10,8 @@ public:
 
 	void spin();
 	//	from game entity
-	void update() override;
-	void render() override;
+	void update();
+	void render();
 };
 
 #endif //ALGODS_CPLUSPLUS_REEL_HPP

@@ -1,8 +1,14 @@
 #include "GameEntity.hpp"
 
-GameEntity::GameEntity() : x_(0), y_(0), active_(true)
+GameEntity::GameEntity() : x_(0), y_(0), active_(false)
 {
 }
+
+GameEntity::GameEntity(int x, int y) : x_(x), y_(y), active_()
+{}
+
+GameEntity::GameEntity(int x, int y, bool isActive) : x_(x), y_(y), active_(isActive)
+{}
 
 GameEntity::~GameEntity()
 {

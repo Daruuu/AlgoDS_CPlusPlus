@@ -5,6 +5,7 @@ class GameEntity
 public:
 	GameEntity();
 	GameEntity(int x, int y);
+	GameEntity(int x, int y, bool isActive);
 	virtual ~GameEntity();	//obligatorio cuando herencia
 
 	//	pure virtual (obligatorio a override en herencia)

@@ -12,7 +12,7 @@ public:
 	void onClick();	// only button
 
 	//	override
-	void update() override;
-	void render() override;
+	void update();
+	void render();
 };
 #endif //ALGODS_CPLUSPLUS_BUTTON_HPP

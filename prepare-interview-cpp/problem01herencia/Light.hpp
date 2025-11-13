@@ -11,8 +11,9 @@ public:
 
 	void blink();
 
-	void update() override;
-	void render() override;
+	// from game entity
+	void update() ;
+	void render() ;
 
 };
 
