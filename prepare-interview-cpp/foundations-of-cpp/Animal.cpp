@@ -20,7 +20,7 @@ Animal& Animal::operator=(const Animal& other)
 
 Animal::~Animal()
 {
-	std::cout << "destructor of animal\n";
+	std::cout << "destructor of ~animal()\n";
 }
 
 std::string Animal::getType() const
@@ -31,10 +31,9 @@ std::string Animal::getType() const
 void Animal::setType(const std::string type)
 {
 	this->type_ = type;
-
 }
 
-void Animal::makesound()
+void Animal::makeSound()
 {
 	std::cout << "sound of animal\n";
 }
