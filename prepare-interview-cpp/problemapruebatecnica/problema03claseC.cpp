@@ -22,7 +22,8 @@ int main()
 	std::map<int, C> m;
 	m[7] = C(1);
 
-	std::cout << dc << c << a;	//	true << true << false
+	//			true << true << false
+	std::cout << dc << c << a;
 
 	return 0;
 }

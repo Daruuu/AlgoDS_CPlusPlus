@@ -14,6 +14,5 @@ int main(void)
 	std::cout << "problema 01:\n";
 	f();
 	f();
-	std::cout << "problema 02:\n";
 	return 0;
 }
