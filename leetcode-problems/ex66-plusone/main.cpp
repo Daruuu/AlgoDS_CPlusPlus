@@ -3,30 +3,36 @@
 
 std::vector<int> plusOne(std::vector<int>& digits)
 {
+	int n = digits.size();
 
-	std::string str = ""; 
-	//char str[] = ""; 
-	for (int i = 0; i <= digits.size() - 1; ++i)
+	for (int i = n - 1; i >= 0; --i)
 	{
-		str += digits[i] + '0';
+		if (digits[i] < 9)
+		{
+			digits[i]++;
+			return (digits);
+		}
+		digits[i] = 0;
 	}
-	std::cout << "value in string: "<< str << std::endl;
-	int res = std::stoi(str);
-	res++;
-	std::cout << "value in integer: "<< res << std::endl;
 
+	std::vector <int> result(n + 1, 0);
 
-	return (std::vector<int> {0});
+	result[0] = 1;
+	return (result);
 }
 
 int	main(void)
 {
-	std::vector<int> nums;
-	nums.push_back(1);
-	nums.push_back(2);
-	nums.push_back(3);
+	std::vector<int> nums = {1, 2, 3, 4, 5};
 
 	plusOne(nums);
 
+	for (int n : nums)
+	{
+		std::cout << n << " ";
+	}
+	std::cout << std::endl;
+
 	return (0);
 }
+
